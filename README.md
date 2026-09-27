@@ -10,7 +10,7 @@
 
 [申请免费样例 / Request a free sample](https://github.com/18228077326zzh-dotcom/-/issues/new?template=free-sample.yml) · [中文演示](assets/demo/ecommerce-lead-automation-zh.mp4) · [English demo](assets/demo/ecommerce-lead-automation-en.mp4) · [完整功能](projects/ecommerce-lead-automation/README.md)
 
-> GitHub Issue 是公开页面。请勿提交姓名、手机号、邮箱、订单号、真实客户文件、密码、Cookie、Token、API Key 或支付信息。
+> GitHub Issue 需要登录且内容公开。请勿提交姓名、手机号、邮箱、订单号、真实客户文件、密码、Cookie、Token、API Key 或支付信息；如果你从接单平台看到本页，也可以直接在平台内私信。
 
 ## 你会得到什么 / What you get
 
