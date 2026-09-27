@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+pydeps/
+.env
+.streamlit/secrets.toml
+*.log
+.DS_Store
+*.xlsx
+*.xls
+!projects/ecommerce-lead-automation/tests/fixtures/golden.xlsx
