@@ -1,0 +1,2 @@
+edge-tts==7.2.8
+ffmpeg-binaries==1.1.0

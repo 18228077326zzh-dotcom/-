@@ -1,0 +1,59 @@
+{
+  "url": "http://127.0.0.1:8802/",
+  "viewport": { "width": 1280, "height": 720 },
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "steps": [
+    {
+      "narr": "杂乱询盘表，怎么快速找到该先跟进的客户？",
+      "actions": []
+    },
+    {
+      "narr": "载入合成示例，不要店铺账号，也不调用付费模型。",
+      "actions": [
+        { "type": "click", "selector": "button:has-text(\"载入示例数据\")" },
+        { "type": "wait", "ms": 900 }
+      ]
+    },
+    {
+      "narr": "留言列自动识别，业务规则也能调整。",
+      "actions": []
+    },
+    {
+      "narr": "一键处理，马上得到意向等级、回复草稿和跟进动作。",
+      "actions": [
+        { "type": "click", "selector": "button:has-text(\"开始处理\")" },
+        { "type": "wait", "ms": 1000 }
+      ]
+    },
+    {
+      "narr": "筛出高意向，采购数量、预算和合作诉求优先出现。",
+      "actions": [
+        { "type": "press", "selector": "input[aria-label=\"意向筛选\"]", "key": "ArrowDown" },
+        { "type": "click", "selector": "[role=\"option\"]:has-text(\"高\")" }
+      ]
+    },
+    {
+      "narr": "原始留言和判断结果始终保留，方便逐行核对。",
+      "actions": [
+        { "type": "press", "selector": "input[aria-label=\"选择要编辑的行\"]", "key": "ArrowDown" },
+        { "type": "click", "selector": "[role=\"option\"]:has-text(\"第 1 行\")" }
+      ]
+    },
+    {
+      "narr": "草稿不会自动发送，采用后还可以人工修改。",
+      "actions": [
+        { "type": "click", "selector": "button:has-text(\"采用 AI 草稿并编辑\")" }
+      ]
+    },
+    {
+      "narr": "确认后，才会进入可发送结果。",
+      "actions": [
+        { "type": "click", "selector": "button:has-text(\"保存并确认\")" }
+      ]
+    },
+    {
+      "narr": "发三到五行纯虚构样例，免费试做；满意再定制。",
+      "actions": []
+    }
+  ]
+}

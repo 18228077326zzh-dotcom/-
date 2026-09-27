@@ -3,6 +3,7 @@ __pycache__/
 .pytest_cache/
 .venv/
 pydeps/
+node_modules/
 .env
 .streamlit/secrets.toml
 *.log

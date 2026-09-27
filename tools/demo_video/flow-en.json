@@ -1,0 +1,59 @@
+{
+  "url": "http://127.0.0.1:8802/",
+  "viewport": { "width": 1280, "height": 720 },
+  "voice": "en-US-AvaNeural",
+  "steps": [
+    {
+      "narr": "Turn ecommerce inquiries into a prioritized follow-up queue.",
+      "actions": []
+    },
+    {
+      "narr": "Load a synthetic sample. No store login or paid model is required.",
+      "actions": [
+        { "type": "click", "selector": "button:has-text(\"载入示例数据\")" },
+        { "type": "wait", "ms": 900 }
+      ]
+    },
+    {
+      "narr": "The message column is detected automatically, and rules stay configurable.",
+      "actions": []
+    },
+    {
+      "narr": "One click assigns intent, drafts a reply, and suggests the next action.",
+      "actions": [
+        { "type": "click", "selector": "button:has-text(\"开始处理\")" },
+        { "type": "wait", "ms": 1000 }
+      ]
+    },
+    {
+      "narr": "Filter high-intent leads so volume, budget, and partnership requests appear first.",
+      "actions": [
+        { "type": "press", "selector": "input[aria-label=\"意向筛选\"]", "key": "ArrowDown" },
+        { "type": "click", "selector": "[role=\"option\"]:has-text(\"高\")" }
+      ]
+    },
+    {
+      "narr": "Every row keeps the original message and decision fields for review.",
+      "actions": [
+        { "type": "press", "selector": "input[aria-label=\"选择要编辑的行\"]", "key": "ArrowDown" },
+        { "type": "click", "selector": "[role=\"option\"]:has-text(\"第 1 行\")" }
+      ]
+    },
+    {
+      "narr": "Nothing is sent automatically. A person adopts and edits the draft.",
+      "actions": [
+        { "type": "click", "selector": "button:has-text(\"采用 AI 草稿并编辑\")" }
+      ]
+    },
+    {
+      "narr": "Only confirmed replies enter the sendable export.",
+      "actions": [
+        { "type": "click", "selector": "button:has-text(\"保存并确认\")" }
+      ]
+    },
+    {
+      "narr": "Try three synthetic rows free. Customization starts at thirty-nine dollars.",
+      "actions": []
+    }
+  ]
+}

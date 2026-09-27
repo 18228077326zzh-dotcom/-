@@ -1,0 +1,124 @@
+name: 免费样例 / Free sample
+description: 用 3–5 行纯虚构数据确认电商询盘表格自动化是否适合你
+title: "[免费样例] "
+labels:
+  - inquiry
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 公开与隐私提示 / Public privacy notice
+
+        这个 Issue 及其附件会公开显示，只接受纯虚构数据。请勿提交由真实客户数据脱敏而来的内容、姓名、手机号、邮箱、订单号、真实客户文件、密码、Cookie、Token、API Key、支付信息或其他个人及商业数据。
+
+        This issue and its attachments are public, so only fully synthetic data is accepted. Do not submit anonymized real-customer content, names, phone numbers, email addresses, order IDs, real customer files, passwords, cookies, tokens, API keys, payment information, or other personal or commercial data.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: 沟通语言 / Language
+      options:
+        - 中文
+        - English
+    validations:
+      required: true
+
+  - type: input
+    id: business_type
+    attributes:
+      label: 业务类型 / Business type
+      description: 例如服装零售、宠物用品、Shopify 独立站；不要填写真实店铺账号。
+      placeholder: 宠物用品跨境电商
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_process
+    attributes:
+      label: 当前最费时间的步骤 / Current pain point
+      description: 简要说明你现在如何整理询盘，以及最希望减少的重复工作。
+      placeholder: 每天手工查看留言，再按采购意向复制到另一张表。
+    validations:
+      required: true
+
+  - type: dropdown
+    id: input_format
+    attributes:
+      label: 输入格式 / Input format
+      options:
+        - XLSX
+        - CSV
+        - Google Sheets 导出文件
+        - 其他 / Other
+    validations:
+      required: true
+
+  - type: input
+    id: sanitized_columns
+    attributes:
+      label: 虚构列名 / Synthetic column names
+      description: 只写不含真实业务信息的通用列名，不要上传真实数据。
+      placeholder: 客户留言、来源、时间、demo-contact-id
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: desired_result
+    attributes:
+      label: 希望得到的结果 / Desired result
+      options:
+        - label: 意向分级 / Intent priority
+        - label: 客户或咨询分类 / Inquiry category
+        - label: 回复草稿 / Reply draft
+        - label: 跟进动作或线索阶段 / Next action or funnel stage
+        - label: 自定义导出字段 / Custom export columns
+    validations:
+      required: true
+
+  - type: textarea
+    id: rule_example
+    attributes:
+      label: 一条明确规则或示例 / One clear rule or example
+      description: 使用虚构值写成“输入 → 期望输出”。
+      placeholder: 留言包含采购数量和预算 → 标记为高意向，并提示确认规格。
+    validations:
+      required: true
+
+  - type: textarea
+    id: synthetic_rows
+    attributes:
+      label: 3–5 行完全虚构的数据（可选）/ 3–5 fully synthetic rows (optional)
+      description: 必须是纯虚构内容；留空时，我会根据列名和规则生成演示数据。
+      placeholder: 请勿粘贴真实或由真实内容脱敏而来的客户资料。
+
+  - type: textarea
+    id: success_criteria
+    attributes:
+      label: 怎样算有用 / Success criteria
+      placeholder: 能正确标出两个高意向示例，并保留原始留言供人工核对。
+    validations:
+      required: true
+
+  - type: dropdown
+    id: package
+    attributes:
+      label: 当前意向 / Current preference
+      options:
+        - 只申请免费预览 / Free preview only
+        - 基础定制 ¥299 / US$39
+        - 标准定制 ¥499 / US$69
+        - 暂不确定 / Not sure yet
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: 提交确认 / Confirmations
+      options:
+        - label: 我知道这个 Issue 内容公开。
+          required: true
+        - label: 我只提交了纯虚构内容，没有提交真实或脱敏的客户数据、个人信息、凭据、客户文件或其他敏感信息。
+          required: true
+        - label: 我接受免费样例仅限 3–5 行、1 个模板、1 个核心场景，不包含完整工具、源码、部署或反复修改。
+          required: true
